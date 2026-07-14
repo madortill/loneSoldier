@@ -15,7 +15,7 @@ import ktzina from "../assets/images/ktzina.svg";
 const rooms = [
   {
     id: "loneCenter",
-    component: LoneCenter,
+    component: LoneCenter ,
   },
 
   // תפתחי את אלה אחרי שתייבאי את הקומפוננטות
