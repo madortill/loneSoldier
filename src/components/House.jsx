@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../css/House.css";
 
-import MainHouseSvg from "./mainHouseSvg";
+import MainHouseSvg from "./MainHouseSvg";
 
 import LoneCenter from "./LoneCenter";
 // import AddedBenefits from "./AddedBenefits";
