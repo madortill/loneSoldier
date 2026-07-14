@@ -1,0 +1,87 @@
+.bubble {
+    margin-bottom: -6rem;
+    margin-right: 5rem;
+    background-size: 100% 110%;
+    background-image: url("../assets/images/bubble.svg");
+    color: black;
+}
+
+.ktzina-bubble {
+    display: flex;
+    flex-direction: column;
+}
+
+.bubble-House {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem 2.5rem 1.5rem;
+    max-width: 15rem;
+}
+
+.ktzina-House {
+    width: 7rem;
+}
+
+.ktzina-bubble-House {
+    position: relative;
+    bottom: 22rem;
+    right: 12rem;
+    pointer-events: none;
+}
+
+@media (max-width: 1550px) {
+    .ktzina-bubble-House {
+        right: 7rem;
+    }
+}
+@media (max-width: 1250px) {
+    .ktzina-bubble-House {
+        right: 5rem;
+        bottom: 20rem;
+    }
+    .ktzina-House {
+        width: 6rem;
+    }
+    .bubble-House {
+        font-size: 1.3rem;
+        padding: 1rem 2.5rem 2rem 1.5rem;
+        max-width: 12rem;
+    }
+}
+@media (max-width: 1050px) {
+    .ktzina-bubble-House {
+        right: 3rem;
+    }
+}
+@media (max-width: 950px) {
+    .ktzina-bubble-House {
+        right: 1rem;
+    }
+    .ktzina-House {
+        width: 5rem;
+    }
+    .bubble-House {
+        font-size: 1.2rem;
+        padding: 0.5rem 2rem 1.5rem 1rem;
+        max-width: 10rem;
+    }
+}
+
+.backToHouse-btn {
+    background-color: #f0f0c95e;
+    width: 6.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.houseIcon {
+    width: 4.5rem;
+}
+
+.backToHouse-btn:hover {
+    transform: scale(1.05);
+}

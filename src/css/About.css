@@ -1,0 +1,83 @@
+
+.about-btn {
+    border: none;
+    color: #330067;
+    font-size: 2rem;
+    background-color: #E4CAFF;
+    border-radius: 150px;
+    width: 3rem;
+    height: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+.aboutBtnContainer {
+    text-align: center;
+    color: #330067;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.about-btn:hover {
+    transform: scale(1.15);
+}
+
+.div-about {
+    position: absolute;
+    color: #330067;
+    width: 15rem;
+    height: 25rem;
+    left: 3.5rem;
+    top: 6rem;
+    background: #E4CAFF;
+    border-radius: 1rem;
+    box-shadow: 0 15px 20px -20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+    direction: rtl;
+}
+
+.list-text-about {
+    transition: background-color 0.5s ease;
+    margin: 5%;
+}
+
+.list-text-about:hover {
+    background-color: #d985faa8;
+}
+
+.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+    max-height: 500px;
+}
+
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0;
+}
+
+.start-main-content-text {
+    font-size: 3.5rem;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1300px) {
+    .div-about {
+        left: 3.5rem;
+        top: 8rem;
+    }
+}
+@media (max-height: 750px) {
+    .div-about {
+        left: 3.5rem;
+        top: 8rem;
+    }
+}

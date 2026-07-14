@@ -1,0 +1,190 @@
+.titleStart {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.startHouse-conatiner {
+    position: relative;
+    border: 2px solid black;
+}
+
+.startSun-conatiner {
+    position: absolute;
+    top: 0.5rem;
+    left: 35rem;
+}
+
+.StartHouse {
+    width: 35rem;
+    overflow: visible;
+}
+
+.sun {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: rotateSun 18s linear infinite;
+}
+
+.sun-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    fill: #F0F0C9;
+}
+
+@keyframes rotateSun {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sun-wrapper {
+    cursor: pointer;
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.sun-wrapper:hover {
+    transform: scale(1.12);
+}
+
+.sun-wrapper:hover .sun {
+    animation-play-state: paused;
+}
+
+@media (max-width: 900px) {
+    .titleStart {
+        margin-top: 10rem;
+    }
+}
+
+/* StartHouse */
+
+.StartHouse-1 {
+    fill: #e4e5c0;
+}
+
+.StartHouse-2 {
+    fill: #bfe3dd;
+}
+
+.StartHouse-3 {
+    fill: #fdf0f0;
+}
+
+.StartHouse-4 {
+    fill: #dae5a3;
+}
+
+.StartHouse-5 {
+    fill: #667433;
+}
+
+.StartHouse-6 {
+    fill: #a288e3;
+}
+
+.StartHouse-7 {
+    fill: #cad089;
+}
+
+.StartHouse-8 {
+    fill: #298b90;
+}
+
+.StartHouse-9 {
+    fill: #f3e6ac;
+}
+
+.StartHouse-10 {
+    fill: #78ab4c;
+}
+
+.StartHouse-11 {
+    fill: #2c636b;
+}
+
+.StartHouse-12 {
+    fill: #fff;
+}
+
+.StartHouse-13 {
+    fill: #dcc780;
+}
+
+.StartHouse-14 {
+    fill: #6f4dc3;
+}
+
+.StartHouse-15 {
+    fill: #89c9d9;
+}
+
+.StartHouse-16 {
+    fill: #bda6f6;
+}
+
+.StartHouse-17 {
+    fill: #9bc77f;
+}
+
+.StartHouse-18 {
+    fill: #5f853c;
+}
+
+.StartHouse-19 {
+    fill: #e3edff;
+}
+
+.StartHouse-20 {
+    fill: #f3dbdb;
+}
+
+.StartHouse-21 {
+    fill: #7c350a;
+}
+
+.StartHouse-22 {
+    fill: #b1ddb7;
+}
+
+.StartHouse-23 {
+    fill: #ffb94d;
+}
+
+.StartHouse-24 {
+    fill: #754e1f;
+}
+
+.StartHouse-25 {
+    fill: #455e62;
+}
+
+.StartHouse-26 {
+    fill: #20797d;
+}
+
+.StartHouse-27 {
+    fill: #166b6e;
+}
+
+.StartHouse-28 {
+    fill: #6e3e1f;
+}
+
+.StartHouse-29 {
+    fill: #42aab0;
+}
+
+.StartHouse-30 {
+    fill: #d0e0b5;
+}
+
+.StartHouse-31 {
+    fill: #5fbfc8;
+}

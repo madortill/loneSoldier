@@ -1,0 +1,81 @@
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    /* חשוב מאוד! */
+    Font-size: calc(1vh + 0.5vw);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    transition: background-color 0.4s ease;
+    font-family: "yarden";
+    color: #F0F0C9;
+    font-size: 1.1rem;
+}
+
+
+
+.bahad11 {
+    height: 5rem;
+}
+
+.til {
+    height: 4.5rem;
+}
+
+.symbols {
+    position: absolute;
+    z-index: 10;
+    top: 0.5rem;
+    left: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    direction: ltr;
+}
+
+h1 {
+    font-family: "yarden-bold";
+}
+
+.title {
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+@font-face {
+    font-family: yarden;
+    src: url('/src/assets/fonts/yarden/yarden-regular-alefalefalef.otf');
+}
+
+@font-face {
+    font-family: yarden-bold;
+    src: url('/src/assets/fonts/yarden/yarden-bold-alefalefalef.otf');
+}

@@ -1,0 +1,94 @@
+.MainHouseSvg {
+    width: 30rem;
+    height: auto;
+}
+
+.main-house-svg {
+    display: block;
+    overflow: visible;
+}
+
+.house-stage {
+    outline: none;
+}
+
+.house-stage--current,
+.house-stage--completed {
+    cursor: pointer;
+}
+
+.house-stage--locked {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.house-stage__completed-background {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* הרקע השחור מוסתר כברירת מחדל */
+.house-stage__completed-background {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+/* רק חדרים שעוד לא הגענו אליהם יהיו חשוכים */
+.house-stage--locked .house-stage__completed-background {
+    opacity: 1;
+}
+
+/* החדר הנוכחי והחדרים שכבר עברנו נשארים מוארים */
+.house-stage--current .house-stage__completed-background,
+.house-stage--completed .house-stage__completed-background {
+    opacity: 0;
+}
+
+.house-stage__white-background,
+.house-stage__text {
+    opacity: 1;
+}
+
+/* גם שלבים עתידיים מוצגים באטימות מלאה */
+.house-stage--locked .house-stage__white-background,
+.house-stage--locked .house-stage__text {
+    opacity: 1;
+}
+
+.house-stage__white-background {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+/* רק הריבוע הלבן של השלב הנוכחי גדל וקטן */
+.house-stage--current .house-stage__white-background {
+    animation: current-stage-scale 1.5s ease-in-out infinite;
+}
+
+.house-stage--current:hover,
+.house-stage--completed:hover {
+    filter: brightness(1.08);
+}
+
+.house-stage:focus-visible {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.9));
+}
+
+@keyframes current-stage-scale {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .house-stage--current .house-stage__white-background {
+        animation: none;
+    }
+}
