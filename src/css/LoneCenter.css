@@ -71,6 +71,7 @@
         margin: 5rem auto;
     }
 }
+
 @media (max-width: 950px) {
     .bathtub-grid {
         width: min(50rem, 90vw);
@@ -110,5 +111,174 @@
         justify-content: center;
         gap: 1rem;
         margin-top: 5rem;
+    }
+}
+
+/* ShelfTree */
+
+.shelf-tree-container {
+    position: relative;
+    top: 12rem;
+    width: 100%;
+    max-width: 80rem;
+    aspect-ratio: 2.35 / 1;
+    margin: 0 auto;
+    overflow: hidden;
+    direction: rtl;
+}
+
+.shelf-tree-item {
+    position: absolute;
+    width: 15%;
+    text-align: center;
+    color: #fff4c7;
+}
+
+.shelf-tree-item__details {
+    min-height: 4.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.shelf-tree-item__title {
+    margin: 0;
+    font-family: "yarden-bold", sans-serif;
+    font-size: clamp(0.75rem, 1.4vw, 1.8rem);
+    font-weight: 700;
+    line-height: 0.95;
+}
+
+.shelf-tree-item__second-title {
+    display: block;
+}
+
+.shelf-tree-item__name {
+    margin: 0.2rem 0 0;
+    font-family: "yarden", sans-serif;
+    font-size: clamp(0.7rem, 1.2vw, 1.5rem);
+    line-height: 1;
+}
+
+.shelf-tree-item__shelf-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 0.15rem;
+}
+
+.shelf-tree-item__shelf {
+    display: block;
+    width: 100%;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+}
+
+.shelf-tree-item__phone {
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    width: 85%;
+    transform: translateX(-50%);
+
+    color: #160d08;
+    font-family: "yarden", sans-serif;
+    font-size: clamp(0.6rem, 1vw, 1.25rem);
+    line-height: 1;
+    white-space: nowrap;
+}
+
+/* שורה עליונה */
+
+.shelf-tree-item--lodging-head {
+    top: 5%;
+    left: 10%;
+}
+
+.shelf-tree-item--welfare-head {
+    top: 5%;
+    left: 31%;
+}
+
+.shelf-tree-item--released-head {
+    top: 5%;
+    left: 52%;
+}
+
+.shelf-tree-item--recognition-head {
+    top: 2%;
+    left: 72%;
+    width: 17%;
+}
+
+/* שורה שנייה */
+
+.shelf-tree-item--lodging-officer {
+    top: 27%;
+    left: 10%;
+}
+
+.shelf-tree-item--center-commander {
+    top: 27%;
+    left: 31%;
+}
+
+.shelf-tree-item--candidate-commander-one {
+    top: 29%;
+    left: 63%;
+}
+
+.shelf-tree-item--lone-officer-one {
+    top: 29%;
+    left: 80%;
+}
+
+/* שורה שלישית */
+
+.shelf-tree-item--candidate-commander-two {
+    top: 49%;
+    left: 63%;
+}
+
+.shelf-tree-item--lone-officer-two {
+    top: 49%;
+    left: 80%;
+}
+
+/* שורה תחתונה */
+
+.shelf-tree-item--lone-officer-three {
+    top: 69%;
+    left: 80%;
+}
+
+.shelf-tree-mirror {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    transform: translateX(-50%);
+    z-index: 3;
+    background-image: url(../assets/images/mirror.png);
+    background-size: 100% 100%;
+    user-select: none;
+    pointer-events: none;
+    padding: 1.7rem 0.8rem 1rem 0.8rem;
+    font-size: 1.55rem;
+    color: #510027;
+}
+
+.shelf-tree-back-button {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1rem;
+    z-index: 10;
+}
+
+@media (max-width: 900px) {
+    .shelf-tree-container {
+        min-width: 55rem;
     }
 }

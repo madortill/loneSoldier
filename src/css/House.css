@@ -84,4 +84,21 @@
 
 .backToHouse-btn:hover {
     transform: scale(1.05);
+    animation-play-state: paused;
+}
+
+.backToHouse-animation {
+    transition: transform 0.25s ease, background-color 0.3s ease;
+    animation: clearPulsate 1s infinite ease-in-out;
+}
+
+@keyframes clearPulsate {
+    0%, 100% {
+        background-color: #f0f0c95e; /* שקוף */
+        box-shadow: 0 0 0px rgba(240, 240, 201, 0);
+    }
+    50% {
+        background-color: #f0f0c985; /* אטום לחלוטין */
+        box-shadow: 0 0 20px rgba(240, 240, 201, 0.8); /* הילה חזקה יותר */
+    }
 }

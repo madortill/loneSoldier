@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/LoneCenter.css";
 
 import bathroom from "../assets/images/bathroom-img.svg";
 import NextBtn from "./NextBtn";
 import BackBtn from "./BackBtn";
 
-function LoneCenterStart({ nextPage }) {
-  const [page, setPage] = useState(0);
+function LoneCenterStart({ nextPage, isBack }) {
+  const [page, setPage] = useState(isBack ? 1 : 0);
   const changePage = () => {
-    console.log("here");
     if (page === 0) {
       setPage(1);
     } else {

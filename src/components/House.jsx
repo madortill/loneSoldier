@@ -4,7 +4,7 @@ import "../css/House.css";
 import MainHouseSvg from "./MainHouseSvg";
 
 import LoneCenter from "./LoneCenter";
-// import AddedBenefits from "./AddedBenefits";
+import AddedBenefits from "./AddedBenefits";
 // import HouseBenefits from "./HouseBenefits";
 // import MoneyBenefits from "./MoneyBenefits";
 // import Exceptions from "./Exceptions";
@@ -19,10 +19,10 @@ const rooms = [
   },
 
   // תפתחי את אלה אחרי שתייבאי את הקומפוננטות
-  // {
-  //   id: "addedBenefits",
-  //   component: AddedBenefits,
-  // },
+  {
+    id: "addedBenefits",
+    component: AddedBenefits,
+  },
   // {
   //   id: "houseBenefits",
   //   component: HouseBenefits,
@@ -70,7 +70,6 @@ function House({ setSection, setActiveRoomTheme  }) {
 
   const completeRoom = (roomId) => {
     const roomIndex = getRoomIndex(roomId);
-
     if (roomIndex === -1) return;
 
     setCompletedRooms((previousRooms) => {
@@ -142,7 +141,7 @@ function House({ setSection, setActiveRoomTheme  }) {
 
       <div className="ktzina-bubble ktzina-bubble-House">
         <div className="bubble bubble-House">
-          <p className="boldText">
+          <p>
             לחצו על הנושא המודגש כדי ללמוד עליו!
           </p>
         </div>
