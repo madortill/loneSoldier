@@ -46,7 +46,7 @@ function House({ setSection, setActiveRoomTheme  }) {
   const [selectedRoom, setSelectedRoom] = useState(null);
 
   // האינדקס הגבוה ביותר שנפתח
-  const [highestUnlockedRoom, setHighestUnlockedRoom] = useState(0);
+  const [highestUnlockedRoom, setHighestUnlockedRoom] = useState(1);
 
   // מערך של שמות החדרים שהושלמו
   const [completedRooms, setCompletedRooms] = useState([]);

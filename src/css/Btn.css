@@ -41,3 +41,12 @@
     bottom: 1rem;
     right: 1rem;
 }
+
+.next-btn--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.next-btn--disabled:hover {
+    transform: none;
+}

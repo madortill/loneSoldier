@@ -2,7 +2,6 @@ import React from "react";
 import "../css/LoneCenter.css";
 
 import shelfImg from "../assets/images/shelf.svg";
-import mirrorImg from "../assets/images/mirror.png";
 
 import BackBtn from "./BackBtn";
 
