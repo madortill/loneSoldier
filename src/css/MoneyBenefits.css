@@ -1,0 +1,73 @@
+
+.Grants-conetnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    width: fit-content;
+    margin-inline: auto;
+    gap: 3rem;
+}
+
+.remote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.remote  p {
+    color: #011760;
+    width: 12rem;
+    margin-bottom: 1rem;
+}
+.television-container {
+    position: relative;
+    width: 35rem;
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.television-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* מיקום הטקסט בתוך מסך הטלוויזיה */
+.television-text {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    height: 59%;
+
+    box-sizing: border-box;
+    padding: 0.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    text-align: center;
+    direction: rtl;
+
+    pointer-events: none;
+}
+
+.television-text strong {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.television-text--small {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    text-align: right;
+}

@@ -5,6 +5,8 @@ import LoneCenterStart from './LoneCenterStart';
 import ShelfTree from './ShelfTree';
 import ToHouseBtn from './ToHouseBtn';
 
+import ktzina from "../assets/images/ktzina.svg";
+
 function LoneCenter({ onComplete, onBack }) {
   const [isBackNavigation, setIsBackNavigation] = useState(false);
   const [didFinish, setDidfinish] = useState(false);
@@ -37,6 +39,14 @@ function LoneCenter({ onComplete, onBack }) {
       <ToHouseBtn didFinish={didFinish} backToHouse={backToHouse}/>
       {page === 0 && <LoneCenterStart nextPage={handleNextPage} isBack={isBackNavigation}/>}
       {page === 1 &&  <ShelfTree previousPage={handlePreviousPage}/>}
+      {didFinish && <div className="ktzina-bubble ktzina-bubble-endSubject">
+          <div className="bubble bubble-endSubject">
+            <p>
+              כל הכבוד סיימת את הנושא! חזרו למפת הנושאים בעזרת הכפתור
+            </p>
+          </div>
+          <img src={ktzina} alt="קצינה" className="ktzina-endSubject" />
+        </div>}
     </div>
   )
 }

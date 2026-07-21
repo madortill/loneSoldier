@@ -102,3 +102,38 @@
         box-shadow: 0 0 20px rgba(240, 240, 201, 0.8); /* הילה חזקה יותר */
     }
 }
+
+
+.bubble-endSubject {
+    font-size: 1.3rem;
+    padding: 1.5rem 3rem 2.5rem 1.5rem;
+    max-width: 13rem;
+}
+
+.ktzina-endSubject {
+    width: 6rem;
+}
+
+
+.ktzina-bubble-endSubject {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: 10;
+  
+    pointer-events: none;
+  
+    animation: endSubjectRise 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  
+  @keyframes endSubjectRise {
+    from {
+      opacity: 0;
+      transform: translate(-50%, 70vh);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate(-50%, -47%);
+    }
+  }

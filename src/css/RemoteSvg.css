@@ -1,0 +1,104 @@
+      .RemoteSvg-1 {
+          fill: #5c5f63;
+      }
+
+      .RemoteSvg-2 {
+          fill: #ed5e59;
+      }
+
+      .RemoteSvg-3 {
+          fill: #1d5faa;
+      }
+
+      .RemoteSvg-4 {
+          fill: #282c2f;
+      }
+
+      .RemoteSvg-5 {
+          fill: #e74844;
+      }
+
+      .RemoteSvg-6 {
+          fill: #f0f0f0;
+      }
+
+      .RemoteSvg-7 {
+          fill: #3b4044;
+      }
+
+      .RemoteSvg-8 {
+          fill: #1b5ca6;
+      }
+
+      .RemoteSvg-9 {
+          fill: #3b81cb;
+      }
+
+      .RemoteSvg-10 {
+          fill: #fafafb;
+      }
+
+      .RemoteSvg-11 {
+          fill: #10427d;
+      }
+
+      .RemoteSvg-12 {
+          fill: #f2f2f2;
+      }
+
+      .RemoteSvg-13 {
+          fill: #1c5fa9;
+      }
+
+      .RemoteSvg-14 {
+          fill: #143969;
+      }
+
+      .RemoteSvg-15 {
+          fill: #494d51;
+      }
+
+      .RemoteSvg-16 {
+          fill: #292d30;
+      }
+
+      .RemoteSvg-17 {
+          fill: #515559;
+      }
+
+      .RemoteSvg-18 {
+          fill: #111214;
+      }
+
+      .RemoteSvg-19 {
+          fill: #bf2e2b;
+      }
+
+      .RemoteSvg-20 {
+          fill: #151515;
+      }
+
+      .RemoteSvg-21 {
+          fill: #393e41;
+      }
+
+      .RemoteSvg-22 {
+          fill: #3c4145;
+      }
+
+      .RemoteSvg-back {
+        cursor: pointer;
+      }
+
+      .RemoteSvg-next {
+        cursor: pointer;
+      }
+
+      .RemoteSvg {
+        width: 8rem;
+      }
+
+      .RemoteSvg-disabled {
+        cursor: not-allowed;
+        fill : #7e8386;
+      }

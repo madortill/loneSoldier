@@ -5,8 +5,8 @@ import MainHouseSvg from "./MainHouseSvg";
 
 import LoneCenter from "./LoneCenter";
 import AddedBenefits from "./AddedBenefits";
-// import HouseBenefits from "./HouseBenefits";
-// import MoneyBenefits from "./MoneyBenefits";
+import HouseBenefits from "./HouseBenefits";
+import MoneyBenefits from "./MoneyBenefits";
 // import Exceptions from "./Exceptions";
 // import Applications from "./Applications";
 
@@ -23,14 +23,14 @@ const rooms = [
     id: "addedBenefits",
     component: AddedBenefits,
   },
-  // {
-  //   id: "houseBenefits",
-  //   component: HouseBenefits,
-  // },
-  // {
-  //   id: "moneyBenefits",
-  //   component: MoneyBenefits,
-  // },
+  {
+    id: "houseBenefits",
+    component: HouseBenefits,
+  },
+  {
+    id: "moneyBenefits",
+    component: MoneyBenefits,
+  },
   // {
   //   id: "exceptions",
   //   component: Exceptions,
@@ -46,7 +46,7 @@ function House({ setSection, setActiveRoomTheme  }) {
   const [selectedRoom, setSelectedRoom] = useState(null);
 
   // האינדקס הגבוה ביותר שנפתח
-  const [highestUnlockedRoom, setHighestUnlockedRoom] = useState(1);
+  const [highestUnlockedRoom, setHighestUnlockedRoom] = useState(3);
 
   // מערך של שמות החדרים שהושלמו
   const [completedRooms, setCompletedRooms] = useState([]);

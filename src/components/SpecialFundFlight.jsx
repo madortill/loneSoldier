@@ -5,11 +5,12 @@ import NextBtn from "./NextBtn";
 import BackBtn from "./BackBtn";
 
 import ktzina from "../assets/images/ktzina.svg";
+import flightApprove from "../assets/images/flightApprove.svg";
 
 function SpecialFundFlight({ nextPage, previousPage, isBack }) {
-  const [page, setPage] = useState(isBack ? 1 : 0);
+  const [page, setPage] = useState(isBack ? 2 : 0);
   const handleNextPage = () => {
-    if (page === 1) {
+    if (page === 2) {
       nextPage();
     } else {
       setPage(page + 1);
@@ -24,7 +25,7 @@ function SpecialFundFlight({ nextPage, previousPage, isBack }) {
   };
   return (
     <div>
-      <h1 className="title">מימון טיסה חריג</h1>
+      {page < 2 && <h1 className="title">מימון טיסה חריג</h1>}
       {page == 0 && (
         <div className="SpecialFundFlight-text">
           <p className="boldText">ניתן להגיש מימון טיסה חריג במקרים הבאים:</p>
@@ -43,7 +44,7 @@ function SpecialFundFlight({ nextPage, previousPage, isBack }) {
         </div>
         <img src={ktzina} alt="קצינה" className="ktzina-House" />
       </div>}
-      <p
+     {page < 2 && <p
         className={`SpecialFundFlight-note ${
           page === 1 ? "SpecialFundFlight-note--page1" : ""
         }`}
@@ -51,7 +52,8 @@ function SpecialFundFlight({ nextPage, previousPage, isBack }) {
         {page === 0
           ? "כל הגשת בקשה למימון טיסה חריג תחויב בצירוף המלצת סא״ל + מכתב הסבר"
           : "גם במקרה זה חייב מכתב סא”ל המסביר את סיבת ההגשה המאוחרת + מכתב אישי מפורט המסביר את סיבת החריגה"}
-      </p>
+      </p>}
+      {page === 2 && <img src={flightApprove} alt="flightApprove" className="flightApprove" />}
       <NextBtn color={"#502009"} onClick={handleNextPage} />
       <BackBtn color={"#502009"} onClick={handlePreviousPage} />
     </div>
