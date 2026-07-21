@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import NextBtn from "./NextBtn";
-import RemoteSvg from "./Remote";
+import RemoteSvg from "./RemoteSvg";
 
 import tvImg from "../assets/images/tv-money.png";
 
