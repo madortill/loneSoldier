@@ -8,12 +8,14 @@ import ParentVisit from './ParentVisit';
 import ErrandsDay from './ErrandsDay';
 import UseErrands from './UseErrands';
 import SpecialHul from './SpecialHul';
+import FundFlight from './FundFlight';
+import SpecialFundFlight from './SpecialFundFlight';
 
 function AddedBenefits({ onComplete, onBack }) {
   const [isBackNavigation, setIsBackNavigation] = useState(false);
   const [didFinish, setDidfinish] = useState(false);
     const [page, setPage] = useState(0);
-    const LAST_PAGE = 6;
+    const LAST_PAGE = 10;
     const backToHouse = () => {
         if (page === LAST_PAGE) {
             onComplete();
@@ -44,6 +46,8 @@ function AddedBenefits({ onComplete, onBack }) {
       {page === 3 && <ErrandsDay nextPage={handleNextPage} previousPage={handlePreviousPage} isBack={isBackNavigation}/>}
       {page === 4 && <UseErrands nextPage={handleNextPage} previousPage={handlePreviousPage} isBack={isBackNavigation}/>}
       {page === 5 && <SpecialHul nextPage={handleNextPage} previousPage={handlePreviousPage} isBack={isBackNavigation}/>}
+      {page === 6 && <FundFlight nextPage={handleNextPage} previousPage={handlePreviousPage} isBack={isBackNavigation}/>}
+      {page === 7 && <SpecialFundFlight nextPage={handleNextPage} previousPage={handlePreviousPage} isBack={isBackNavigation}/>}
     </div>
   )
 }

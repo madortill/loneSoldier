@@ -488,3 +488,138 @@
 .basket-text p {
     margin: 1rem;
 }
+
+/* FundFlight */
+
+.flight-ticket-container {
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
+    width: fit-content;
+}
+
+.flight-ticket {
+    background-image: url(../assets/images/flight-ticket.svg);
+    background-size: 100% 100%;
+    height: 14rem;
+    width: 26rem;
+    padding: 3.5rem 0.3rem 1rem 5rem;
+    color: #502009;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.flight-ticket:nth-child(3) {
+    grid-column: 1 / 3;
+    justify-self: center;
+  }
+
+.info-btn {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10rem;
+    background-color: #502009;
+    border: 0rem;
+    color: white;
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+.info-btn:hover {
+    transform: scale(1.15);
+}
+.info-btn:active {
+   background-color: #7a3515;
+}
+
+.info-btn-FundFlight {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+}
+
+.phone-flight-ticket {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 4;
+    background-image: url(../assets/images/flight-ticket-phone.svg);
+    background-size: 100% 100%;
+    height: 30rem;
+    max-width: 15rem;
+    padding: 9rem 1.7rem 1rem 0.9rem;
+    font-size: 1.4rem;
+    text-align: right;
+    color: #502009;
+}
+
+
+.phone-flight-ticket-big-space {
+    margin-bottom: 1.5rem;
+}
+
+.phone-flight-ticket-close {
+    position: absolute;
+    top: 6rem;
+    right: 1.2rem;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #5c2106;
+
+    font-family: inherit;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.phone-flight-ticket-close:hover {
+    transform: scale(1.15);
+}
+
+/* SpecialFundFlight */
+
+.SpecialFundFlight-text {
+    background-image: url(../assets/images/SpecialFundFlight-img.svg);
+    background-size: 100% 100%;
+    font-size: 1.5rem;
+    padding: 7rem 4rem 3rem 4rem;
+    color: #502009;
+    margin: 2rem 0rem 1rem ;
+}
+
+.SpecialFundFlight-note {
+    font-size: 1.5rem;
+    color: #502009;
+    max-width: 60%;
+    width: 40rem;
+    margin-inline: auto;
+}
+
+.bubble-SpecialFundFlight {
+    font-size: 1.5rem;
+    padding: 2rem 4rem 3rem 2rem;
+    max-width: 20rem;
+}
+
+.ktzina-bubble-SpecialFundFlight {
+    margin-inline: auto;
+    width: fit-content;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.SpecialFundFlight-note--page1 {
+    color: #F0F0C9;
+    width: 45rem;
+}
