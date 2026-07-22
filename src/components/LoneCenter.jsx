@@ -13,7 +13,7 @@ function LoneCenter({ onComplete, onBack }) {
     const [page, setPage] = useState(0);
     const LAST_PAGE = 1;
     const backToHouse = () => {
-        if (page === LAST_PAGE) {
+        if (didFinish) {
             onComplete();
         } else {
             onBack();
@@ -23,7 +23,9 @@ function LoneCenter({ onComplete, onBack }) {
     const handleNextPage = () => {
       setIsBackNavigation(false); // מאפסים את מצב החזרה
       if (page + 1 === LAST_PAGE) {
-        setDidfinish(true);
+        setTimeout(() => {
+          setDidfinish(true);
+        }, 800);
       }
     
       setPage(page + 1);

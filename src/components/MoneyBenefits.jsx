@@ -5,6 +5,8 @@ import ToHouseBtn from "./ToHouseBtn";
 
 import ktzina from "../assets/images/ktzina.svg";
 import Grants from "./Grants";
+import HouseMoney from "./HouseMoney";
+import GiftCards from "./GiftCards";
 
 function MoneyBenefits({ onComplete, onBack }) {
   const [isBackNavigation, setIsBackNavigation] = useState(false);
@@ -12,7 +14,7 @@ function MoneyBenefits({ onComplete, onBack }) {
   const [page, setPage] = useState(0);
   const LAST_PAGE = 2;
   const backToHouse = () => {
-    if (page === LAST_PAGE) {
+    if (didFinish) {
       onComplete();
     } else {
       onBack();
@@ -21,11 +23,13 @@ function MoneyBenefits({ onComplete, onBack }) {
 
   const handleNextPage = () => {
     setIsBackNavigation(false); // מאפסים את מצב החזרה
-    if (page === LAST_PAGE) {
-      setDidfinish(true);
-    } else {
-      setPage(page + 1);
+    if (page + 1 === LAST_PAGE) {
+      setTimeout(() => {
+        setDidfinish(true);
+      }, 800);
     }
+  
+    setPage(page + 1);
   };
 
   const handlePreviousPage = () => {
@@ -42,8 +46,15 @@ function MoneyBenefits({ onComplete, onBack }) {
           isBack={isBackNavigation}
         />
       )}
+      {page === 1 &&
+        <HouseMoney
+          nextPage={handleNextPage}
+          previousPage={handlePreviousPage}
+        />
+      }
+      {page === 2 && <GiftCards previousPage={handlePreviousPage}/>}
       {didFinish && (
-        <div className="ktzina-bubble ktzina-bubble-endSubject">
+        <div className="ktzina-bubble ktzina-bubble-endSubject ktzina-bubble-endSubject-MoneyBenefits">
           <div className="bubble bubble-endSubject">
             <p>כל הכבוד סיימת את הנושא! חזרו למפת הנושאים בעזרת הכפתור</p>
           </div>

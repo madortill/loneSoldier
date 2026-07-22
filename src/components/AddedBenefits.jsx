@@ -22,7 +22,7 @@ function AddedBenefits({ onComplete, onBack }) {
   const [page, setPage] = useState(0);
   const LAST_PAGE = 10;
   const backToHouse = () => {
-    if (page === LAST_PAGE) {
+    if (didFinish) {
       onComplete();
     } else {
       onBack();

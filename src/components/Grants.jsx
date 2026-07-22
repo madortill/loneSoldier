@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../css/MoneyBenefits.css";
 
 import NextBtn from "./NextBtn";
 import RemoteSvg from "./RemoteSvg";
